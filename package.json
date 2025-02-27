@@ -1,0 +1,16 @@
+{
+  "name": "WorkToMe",
+  "packageManager": "yarn@4.6.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^16.0.0",
+    "prettier": "3.5.2",
+    "typescript-eslint": "^8.25.0"
+  }
+}
