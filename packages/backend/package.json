@@ -3,9 +3,21 @@
   "packageManager": "yarn@4.6.0",
   "private": true,
   "scripts": {
-    "start": "ts-node ./src/index.ts"
+    "start": "nodemon ./src/testMono.ts",
+    "serve": "nodemon ./src/index.ts",
+    "build": "rimraf ./dist && tsc -b"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
   },
   "devDependencies": {
-    "ts-node": "^10.9.2"
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4",
+    "@types/node": "^22.13.5",
+    "nodemon": "^3.1.9",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
   }
 }
